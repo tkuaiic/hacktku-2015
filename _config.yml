@@ -1,0 +1,10 @@
+title: HackTKU 2015
+subtitle:
+author: HackTKU
+url: http://hacktku.github.io/2015
+root: /2015/
+permalink: :year/:month/:day/:title/
+theme: landscape
+deploy:
+  type: git
+  repo: git@github.com:hacktku/hacktku.github.io.git
