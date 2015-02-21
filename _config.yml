@@ -4,7 +4,9 @@ author: HackTKU
 url: http://hacktku.github.io/2015
 root: /2015/
 permalink: :year/:month/:day/:title/
-theme: landscape
+theme: 2015
 deploy:
   type: git
-  repo: git@github.com:hacktku/hacktku.github.io.git
+  repo: git@github.com:hacktku/2015.git
+  branch: gh-pages
+google_analytics: UA-4910098-12
