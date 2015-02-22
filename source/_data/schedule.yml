@@ -1,0 +1,34 @@
+- date: 3/28 (Sat)
+  events:
+  - time: "9:00"
+    content: 報到
+  - time: "9:30"
+    content: 開場
+  - time: "10:00"
+    content: Coding
+  - time: "12:00"
+    content: 午餐
+  - time: "13:00"
+    content: Coding
+  - time: "18:00"
+    content: 晚餐
+  - time: "19:00"
+    content: Coding
+  - time: "23:00"
+    content: 宵夜
+- date: 3/29 (Sun)
+  events:
+  - time: "0:00"
+    content: Coding
+  - time: "7:00"
+    content: 早餐
+  - time: "8:00"
+    content: Coding
+  - time: "12:00"
+    content: 午餐
+  - time: "13:00"
+    content: Coding
+  - time: "16:00"
+    content: 成果展示
+  - time: "17:30"
+    content: 頒獎

@@ -1,0 +1,31 @@
+#section-location
+  background: color-background-location
+
+#address-wrap
+  @media mq-normal
+    display: flex
+    flex-direction: row
+
+#map-canvas
+  height: map-height
+  @media mq-normal
+    height: auto
+    flex: 0 0 50%
+
+#address
+  background: darken(color-background-location, 20%)
+  padding: 25px 30px
+  @media mq-normal
+    flex: 0 0 50%
+
+#address-name
+  font-weight: bold
+  font-size: 1.5em
+  display: block
+  line-height: 1
+
+.address-desc
+  line-height: line-height
+  padding-top: line-height
+  strong
+    font-weight: bold

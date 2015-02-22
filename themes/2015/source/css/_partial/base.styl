@@ -1,0 +1,59 @@
+global-reset()
+
+html
+  box-sizing: border-box
+
+body
+  background: color-background url("images/footer_lodyas.png")
+  font: font-size font-sans
+  color: color-default
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+*, *:before, *:after
+  box-sizing: inherit
+
+button
+input[type="reset"]
+input[type="button"]
+input[type="submit"]
+  &::-moz-focus-inner
+    padding: 0
+    border: 0
+
+input, button, select
+  margin: 0
+  padding: 0
+  border: 0
+
+.inner
+  clearfix()
+  max-width: max-width
+  padding: 0 gutter-width
+  margin: 0 auto
+
+.section-title
+  font-family: font-title
+  font-size: 2.5em
+  line-height: 1
+  padding: 1em 0
+  text-align: center
+  font-weight: bold
+  &:before, &:after
+    opacity: 0.6
+    padding: 0 5px
+    font-weight: 300
+  &:before
+    content: "<"
+  &:after
+    content: ">"
+
+.big-btn
+  display: inline-block
+  border: 3px solid color-border
+  padding: 12px 24px
+  line-height: 1em
+  font-size: 1.3em
+  color: inherit
+  text-decoration: none
