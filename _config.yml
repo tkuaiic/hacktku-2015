@@ -4,7 +4,7 @@ author: HackTKU
 url: http://hacktku.org/2015
 root: /2015/
 permalink: :year/:month/:day/:title/
-theme: 2015
+theme: "2015"
 deploy:
   type: git
   repo: git@github.com:hacktku/2015.git

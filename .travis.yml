@@ -21,8 +21,7 @@ before_install:
   - npm install hexo-cli -g
 
 script:
-  - hexo generate
-  - hexo deploy
+  - hexo generate -d
 
 branches:
   only:
