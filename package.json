@@ -8,6 +8,7 @@
   "dependencies": {
     "hexo": "3.0.0-rc.4",
     "hexo-deployer-git": "0.0.3",
+    "hexo-renderer-jade": "^0.1.0",
     "hexo-renderer-marked": "^0.2.4",
     "hexo-renderer-stylus": "^0.2.0",
     "hexo-server": "^0.1.2"

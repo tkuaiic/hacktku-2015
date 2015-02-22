@@ -2,7 +2,7 @@
 <html>
 {{ partial('partial/head') }}
 <body>
-  {{ partial('partial/header') }}
+  <!-- {{ partial('partial/header') }} -->
   {{ body }}
   {{ partial('partial/footer') }}
   {{ partial('partial/after_footer') }}
