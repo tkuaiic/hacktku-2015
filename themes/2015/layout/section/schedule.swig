@@ -1,4 +1,4 @@
-<section id="section-schedule">
+<section id="schedule">
   <h2 class="section-title">Schedule</h2>
   <div class="inner">
     {% for item in site.data.schedule %}

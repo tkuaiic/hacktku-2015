@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 {{ partial('partial/head') }}
 <body>
   {{ partial('partial/header') }}

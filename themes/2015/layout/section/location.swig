@@ -1,4 +1,4 @@
-<section id="section-location">
+<section id="location">
   <h2 class="section-title">Location</h2>
   <div id="address-wrap" itemprop="location" itemtype="http://schema.org/Place" itemscope>
     <div id="map-canvas"></div>

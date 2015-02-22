@@ -1,4 +1,4 @@
-<section id="section-sponsors">
+<section id="sponsors">
   <h2 class="section-title">Sponsors</h2>
   <div class="inner">
     <div id="sponsor-contact-link">

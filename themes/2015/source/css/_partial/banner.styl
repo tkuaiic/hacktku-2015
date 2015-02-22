@@ -1,4 +1,4 @@
-#section-banner
+#banner
   text-align: center
   padding: 60px 0
 
@@ -34,3 +34,19 @@
 #banner-desc
   margin: 1em 0 2.5em
   line-height: line-height
+
+#countdown
+  display: flex
+  font-family: font-title
+  margin: 2.5em 0
+  justify-content: center
+
+.countdown-group
+  font-size: 2.5em
+  &:not(:last-child):after
+    content: ":"
+    opacity: 0.5
+
+.countdown-digit
+  display: block
+  float: left
