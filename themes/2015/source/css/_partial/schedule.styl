@@ -6,21 +6,25 @@
   @media mq-normal
     float: left
     width: 50%
-    padding: 0 15px 30px
+    &:first-child
+      padding-right: 30px
+    &:last-child
+      padding-left: 30px
 
 .schedule-list-title
   font-weight: bold
   background: darken(color-background-schedule, 15%)
-  padding: 15px 20px
+  padding: 15px gutter-width
   line-height: 1
   display: block
   position: relative
+  margin: 0 gutter-width * -1
 
 .schedule-list
   padding-top: 15px
   line-height: line-height
   td
-    padding: 8px 20px
+    padding: 8px 0
     &:first-child
       font-weight: bold
-      padding-right: 0
+      padding-right: 20px
