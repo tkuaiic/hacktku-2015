@@ -10,3 +10,4 @@ deploy:
   branch: gh-pages
 google_analytics: UA-4910098-12
 relative_link: true
+fb_app_id: 1061980407162119

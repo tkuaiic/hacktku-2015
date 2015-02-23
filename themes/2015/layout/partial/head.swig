@@ -1,4 +1,4 @@
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -14,7 +14,8 @@
   <!-- Open Graph -->
   <link rel="canonical" href="{{ url }}" />
   {{ open_graph({
-    image: url_for('logo.png')
+    image: config.url + '/' + url_for('cover.png'),
+    fb_app_id: config.fb_app_id
   }) }}
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('icons/apple-icon-57x57.png') }}">
