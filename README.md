@@ -1,4 +1,6 @@
-# HackTKU 2015
+# [HackTKU 2015]
+
+[![Build Status](https://travis-ci.org/hacktku/2015.svg?branch=master)](https://travis-ci.org/hacktku/2015)
 
 HackTKU 2015 Official Website
 
@@ -8,11 +10,22 @@ You have to install [Node.js] before getting started.
 
 ``` bash
 $ npm install hexo-cli -g
+$ npm install gulp-cli -g
 $ npm install
 ```
 
-## License
+## Server
 
-[CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+``` bash
+$ hexo server
+```
 
+## Build
+
+``` bash
+$ hexo generate
+$ gulp 
+```
+
+[HackTKU 2015]: http://hacktku.org/2015/
 [Node.js]: http://nodejs.org/

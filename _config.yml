@@ -9,3 +9,4 @@ deploy:
   repo: git@github.com:hacktku/2015.git
   branch: gh-pages
 google_analytics: UA-4910098-12
+relative_link: true

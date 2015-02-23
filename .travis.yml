@@ -19,9 +19,15 @@ before_install:
   - git config --global user.email tommy351@gmail.com
   # Install Hexo
   - npm install hexo-cli -g
+  # Install gulp
+  - npm install gulp-cli -g
+  # Clone the repo
+  - git clone git@github.com:hacktku/2015.git --branch gh-pages .deploy_git
 
 script:
-  - hexo generate -d
+  - hexo generate
+  - gulp
+  - hexo deploy
 
 branches:
   only:
