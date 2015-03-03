@@ -9,19 +9,28 @@ var htmlMinifierOptions = {
   collapseBooleanAttributes: true,
   removeScriptTypeAttributes: true,
   removeStyleLinkTypeAttributes: true,
-  removeEmptyAttributes: true,
+  removeOptionalTags: true,
   minifyJS: true,
   minifyCSS: true
 };
 
-gulp.task('usemin', function(){
+gulp.task('useref', function(){
+  var assets = $.useref.assets({
+    searchPath: 'public'
+  });
+
   return gulp.src('public/**/*.html')
-    .pipe($.usemin({
-      css: [$.minifyCss(), 'concat', $.rev()],
-      html: [$.htmlMinifier(htmlMinifierOptions)],
-      js: [$.uglify(), $.rev()]
+    .pipe(assets)
+    .pipe($.if('*.css', $.minifyCss()))
+    .pipe($.if('*.js', $.uglify()))
+    .pipe($.rev())
+    .pipe(assets.restore())
+    .pipe($.useref())
+    .pipe($.revReplace({
+      prefix: '/2015/'
     }))
+    .pipe($.if('*.html', $.htmlMinifier(htmlMinifierOptions)))
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('default', ['usemin']);
+gulp.task('default', ['useref']);
