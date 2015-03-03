@@ -4,4 +4,5 @@
   {{ partial('section/schedule') }}
   {{ partial('section/location') }}
   {{ partial('section/sponsors') }}
+  {{ partial('section/faq') }}
 </div>

@@ -1,0 +1,26 @@
+#faq
+  background: color-background-faq
+
+#faq-list
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  margin: 0 gutter-width * -1
+
+.faq-item-wrap
+  @media mq-normal
+    flex: 0 0 50%
+
+.faq-item
+  padding: 0 gutter-width
+  line-height: line-height
+
+.faq-item-title
+  font-weight: bold
+  display: block
+  &:before
+    content: "Q."
+    padding-right: 6px
+
+.faq-item-content
+  padding: 1em 0 30px

@@ -24,13 +24,6 @@
           {saturation: -40},
           {lightness: 8}
         ]
-      },
-      // Hide poi (point of interest)
-      {
-        featureType: 'poi',
-        stylers: [
-          {visibility: 'off'}
-        ]
       }
     ]
   });

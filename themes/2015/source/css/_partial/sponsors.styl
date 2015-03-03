@@ -1,6 +1,27 @@
 #sponsors
   background: color-background-sponsors
 
+#sponsor-list
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-around
+
+.sponsor-item-wrap
+  max-width: 100%
+  align-self: center
+  @media mq-normal
+    max-width: 33%
+    flex: 0 0 @max-width
+
+.sponsor-item
+  display: block
+  padding: 20px 0
+  text-align: center
+
+.sponsor-logo
+  max-width: 100%
+  display: inline-block
+
 #sponsor-contact-link
   text-align: center
   padding-bottom: 30px

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 {{ partial('partial/head') }}
 <body>
   <!-- {{ partial('partial/header') }} -->
