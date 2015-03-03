@@ -21,8 +21,6 @@ before_install:
   - npm install hexo-cli -g
   # Install gulp
   - npm install gulp-cli -g
-  # Clone the repo
-  - git clone git@github.com:hacktku/2015.git --branch gh-pages .deploy_git
 
 script:
   - hexo generate && gulp && hexo deploy

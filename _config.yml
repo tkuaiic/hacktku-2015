@@ -6,7 +6,7 @@ permalink: :year/:month/:day/:title/
 theme: "2015"
 deploy:
   type: git
-  repo: git@github.com:hacktku/2015.git
+  repo: https://github.com/hacktku/2015.git
   branch: gh-pages
 google_analytics: UA-4910098-12
 relative_link: true
