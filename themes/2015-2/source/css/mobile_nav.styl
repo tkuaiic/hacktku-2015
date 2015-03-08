@@ -1,0 +1,98 @@
+@import "nib"
+@import "_variables"
+
+toggle-width = 25px
+toggle-height = toggle-width * 0.8
+toggle-line = 2px
+transition-duration = 0.4s
+mobile-nav-width = 260px
+
+#mobile-nav-toggle-wrap
+  padding: gutter-width
+  cursor: pointer
+  position: absolute
+  top: 0
+  left: 0
+  transition: transition-duration
+  z-index: 1
+  @media mq-normal
+    display: none
+  .mobile-nav-on &
+    transform: translateX(mobile-nav-width)
+
+#mobile-nav-toggle
+  width: toggle-width
+  height: toggle-height
+  position: relative
+
+.mobile-nav-toggle-bar
+  position: absolute
+  width: 100%
+  height: toggle-line
+  left: 0
+  background: color-gray
+  transition: transition-duration
+  transform-origin: 0
+  border-radius: 2px
+  .mobile-nav-on &
+    background: #fff
+  &:first-child
+    top: 0
+    .mobile-nav-on &
+      transform: rotate(45deg)
+  &:nth-child(2)
+    top: 50%
+    margin-top: toggle-line * -0.5
+    .mobile-nav-on &
+      opacity: 0
+  &:last-child
+    bottom: 0
+    .mobile-nav-on &
+      transform: rotate(-45deg)
+
+#mobile-nav-dimmer
+  position: absolute
+  top: 0
+  left: 100%
+  width: 100%
+  height: 100%
+  background: #000
+  opacity: 0
+  transition: opacity transition-duration, transform 0s transition-duration
+  z-index: 1
+  .mobile-nav-on &
+    opacity: 0.7
+    transform: translateX(-100%)
+    transition: opacity transition-duration
+
+#container
+  transition: transition-duration
+  height: 100%
+  overflow: auto
+  .mobile-nav-on &
+    transform: translateX(mobile-nav-width)
+    overflow: hidden
+
+#mobile-nav
+  position: fixed
+  top: 0
+  left: mobile-nav-width * -1
+  height: 100%
+  width: mobile-nav-width
+  transition: transition-duration
+  background: #222
+  z-index: 1
+  overflow: auto
+  .mobile-nav-on &
+    transform: translateX(mobile-nav-width)
+
+#mobile-nav-list
+  padding: 10px 0
+
+.mobile-nav-link
+  display: block
+  line-height: 1
+  color: #fff
+  padding: 12px 20px
+  text-decoration: none
+  font-size: 1.3em

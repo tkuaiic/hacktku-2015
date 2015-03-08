@@ -1,0 +1,37 @@
+@import "nib"
+@import "_variables"
+
+map-height = 260px
+
+#location-inner
+  padding-left: 0
+  padding-right: 0
+  padding-bottom: 50px
+  @media mq-normal
+    display: flex
+    flex-direction: row
+
+#location-map
+  height: map-height
+  @media mq-normal
+    height: auto
+    flex: 0 0 50%
+
+#location-address-wrap
+  @media mq-normal
+    flex: 0 0 50%
+
+#location-address
+  padding: gutter-width
+
+#location-address-title
+  font-size: 1.5em
+  font-weight: bold
+  color: color-ocean
+  display: block
+  line-height: 1
+  padding-bottom: 0.3em
+
+#location-address-detail
+  color: color-gray
+  font-size: 0.9em

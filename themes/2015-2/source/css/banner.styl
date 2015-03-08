@@ -1,0 +1,71 @@
+@import "nib"
+@import "_variables"
+
+logo-size = 200px
+
+#banner
+  position: relative
+
+#banner-inner
+  padding: 80px 0 50px
+  position: relative
+  max-width: 100%
+
+#banner-title-wrap
+  position: relative
+  height: logo-size + 80px
+  &:before
+    content: ""
+    position: absolute
+    top: 140px
+    bottom: 0
+    left: 0
+    right: 0
+    background: color-ocean
+  &:after
+    content: ""
+    width: logo-size
+    height: logo-size
+    position: absolute
+    top: 0
+    left: 50%
+    margin-left: @width * -0.5
+    image: "images/logo.png" @width @height
+
+#banner-title
+  text-align: center
+  font-size: 30px
+  line-height: @font-size
+  font-family: font-title
+  font-weight: 700
+  color: #fff
+  position: absolute
+  bottom: 30px
+  left: 0
+  width: 100%
+
+#banner-desc
+  line-height: line-height
+  text-align: center
+  padding-top: 1em
+
+#banner-btn-wrap
+  text-align: center
+  padding: 30px 0 0
+
+#countdown
+  text-align: center
+  padding: 1em 0
+
+.countdown-digit
+  display: inline-block
+  font-family: font-title
+  font-size: 2em
+  color: color-ocean
+  font-weight: 200
+  &:before
+    content: ":"
+    opacity: 0.5
+  &:first-child
+    &:before
+      display: none

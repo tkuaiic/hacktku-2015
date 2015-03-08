@@ -1,0 +1,59 @@
+@import "nib"
+@import "_variables"
+
+#header
+  clearfix()
+  background: rgba(#fff, 0.9)
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1
+
+#header-nav
+  float: right
+  padding: 0 gutter-width
+  display: none
+  @media mq-normal
+    display: block
+
+.header-nav-item
+  float: left
+  line-height: 1
+  padding: 0 15px
+
+.header-nav-link
+  text-decoration: none
+  font-weight: bold
+  color: color-default
+  display: block
+  padding: 20px 0
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    bottom: 16px
+    left: 0
+    right: 0
+    background: color-ocean
+    height: 2px
+    display: none
+  &:hover
+    color: color-ocean
+    &:before
+      display: block
+
+#header-signup-btn
+  padding: 8px 20px
+  border-radius: 20px
+  color: color-ocean
+  text-decoration: none
+  font-weight: bold
+  margin: 10px gutter-width 10px 0
+  display: block
+  border: 2px solid color-ocean
+  transition: 0.2s
+  float: right
+  line-height: 1
+  &:hover
+    background: color-ocean
+    color: #fff

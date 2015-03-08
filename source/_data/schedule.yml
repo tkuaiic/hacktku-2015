@@ -1,4 +1,5 @@
-- date: 3/28 (Sat)
+- date: 3/28
+  day: Sat
   events:
   - time: "9:00"
     content: 報到
@@ -16,7 +17,8 @@
     content: Coding
   - time: "23:00"
     content: 宵夜
-- date: 3/29 (Sun)
+- date: 3/29
+  day: Sun
   events:
   - time: "0:00"
     content: Coding

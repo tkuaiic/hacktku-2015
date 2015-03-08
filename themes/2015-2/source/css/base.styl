@@ -1,0 +1,78 @@
+@import "nib"
+@import "_variables"
+
+global-reset()
+
+html
+  box-sizing: border-box
+
+body
+  background: color-background
+  font: font-size font-sans
+  color: color-default
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  position: relative
+
+html, body
+  height: 100%
+  overflow: hidden
+
+*, *:before, *:after
+  box-sizing: inherit
+
+button
+input[type="reset"]
+input[type="button"]
+input[type="submit"]
+  &::-moz-focus-inner
+    padding: 0
+    border: 0
+
+input, button, select
+  margin: 0
+  padding: 0
+  border: 0
+
+.inner
+  clearfix()
+  max-width: max-width
+  padding: 0 gutter-width
+  margin: 0 auto
+
+.big-btn
+  font-weight: bold
+  color: color-ocean
+  display: inline-block
+  font-size: 1.2em
+  padding: 10px 30px
+  border-radius: 30px
+  border: 3px solid color-ocean
+  text-align: center
+  white-space: nowrap
+  text-decoration: none
+  line-height: 1
+  transition: 0.2s
+  &:hover
+    background: color-ocean
+    color: #fff
+
+.section-title-wrap
+  text-align: center
+  padding: 40px 0
+
+.section-title
+  font-family: font-title
+  font-weight: 200
+  font-size: 40px
+  line-height: 1.2em
+  border-bottom: 4px solid color-border
+  display: inline-block
+
+.section-content
+  line-height: line-height
+  p
+    margin: 1em 0
+  strong
+    font-weight: bold
