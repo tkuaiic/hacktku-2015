@@ -18,4 +18,11 @@
   <!-- endbuild -->
   <link href="http://fonts.googleapis.com/css?family=Exo+2:200,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Google Analytics -->
+  {{ partial('google_analytics') }}
+  <!-- Open Graph -->
+  <link rel="canonical" href="{{ url }}" />
+  {{ open_graph({
+    fb_app_id: config.fb_app_id
+  }) }}
 </head>
