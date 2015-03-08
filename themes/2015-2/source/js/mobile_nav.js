@@ -20,4 +20,10 @@
     e.preventDefault();
     body.classList.remove(CLASS_NAME);
   });
+
+  document.getElementById('mobile-nav-list').addEventListener('click', function(e){
+    if (!e.target.classList.contains('mobile-nav-link')) return;
+
+    body.classList.remove(CLASS_NAME);
+  });
 })();
