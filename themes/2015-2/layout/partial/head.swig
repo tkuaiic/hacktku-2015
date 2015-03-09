@@ -23,6 +23,6 @@
   <!-- Open Graph -->
   <link rel="canonical" href="{{ url }}" />
   {{ open_graph({
-    fb_app_id: config.fb_app_id
+    image: config.url + '/cover.png'
   }) }}
 </head>
