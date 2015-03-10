@@ -24,6 +24,8 @@
   document.getElementById('mobile-nav-list').addEventListener('click', function(e){
     if (!e.target.classList.contains('mobile-nav-link')) return;
 
+    e.preventDefault();
     body.classList.remove(CLASS_NAME);
+    container.scrollTop = document.getElementById(e.target.hash.substring(1)).offsetTop;
   });
 })();
