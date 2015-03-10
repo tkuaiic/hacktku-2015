@@ -11,8 +11,8 @@
 
 #header-nav
   float: right
-  padding: 0 gutter-width
   display: none
+  position: relative
   @media mq-normal
     display: block
 
@@ -27,20 +27,9 @@
   color: color-default
   display: block
   padding: 20px 0
-  position: relative
-  &:before
-    content: ""
-    position: absolute
-    bottom: 16px
-    left: 0
-    right: 0
-    background: color-ocean
-    height: 2px
-    display: none
-  &:hover
-    color: color-ocean
-    &:before
-      display: block
+  transition: 0.2s
+  &:hover, &.on
+    color: color-link
 
 #header-signup-btn
   padding: 8px 20px
@@ -48,7 +37,7 @@
   color: color-ocean
   text-decoration: none
   font-weight: bold
-  margin: 10px gutter-width 10px 0
+  margin: 10px gutter-width
   display: block
   border: 2px solid color-ocean
   transition: 0.2s
@@ -57,3 +46,12 @@
   &:hover
     background: color-ocean
     color: #fff
+
+#header-nav-indicator
+  position: absolute
+  background: color-ocean
+  bottom: 8px
+  left: 0
+  width: 0
+  height: 2px
+  transition: 0.3s

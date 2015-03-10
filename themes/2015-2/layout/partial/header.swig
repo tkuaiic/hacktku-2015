@@ -8,5 +8,6 @@
         </li>
       {% endfor %}
     </ul>
+    <div id="header-nav-indicator"></div>
   </nav>
 </header>

@@ -1,5 +1,6 @@
 <script src="//maps.googleapis.com/maps/api/js?sensor=true"></script>
 <!-- build:js js/index.js -->
+{{ js('js/header_nav') }}
 {{ js('js/mobile_nav') }}
 {{ js('js/countdown') }}
 {{ js('js/map') }}

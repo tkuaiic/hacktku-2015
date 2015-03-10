@@ -6,7 +6,6 @@
   var container = document.getElementById('container');
   var dimmer = document.getElementById('mobile-nav-dimmer');
   var CLASS_NAME = 'mobile-nav-on';
-  if (!navToggle) return;
 
   navToggle.addEventListener('click', function(e){
     e.preventDefault();
