@@ -10,9 +10,9 @@
   {{ css('css/intro') }}
   {{ css('css/schedule') }}
   {{ css('css/location') }}
-  {{ css('css/sponsors') }}
   {{ css('css/judges') }}
   {{ css('css/faq') }}
+  {{ css('css/partners') }}
   {{ css('css/footer') }}
   {{ css('css/mobile_nav') }}
   <!-- endbuild -->

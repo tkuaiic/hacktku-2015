@@ -3,7 +3,7 @@
   {{ partial('section/intro') }}
   {{ partial('section/schedule') }}
   {{ partial('section/location') }}
-  {{ partial('section/sponsors') }}
   {{ partial('section/judges') }}
   {{ partial('section/faq') }}
+  {{ partial('section/partners') }}
 </div>
