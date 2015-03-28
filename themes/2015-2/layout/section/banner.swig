@@ -5,7 +5,6 @@
       <h1 id="banner-title" itemprop="name">TKU Hackathon 2015</h1>
     </div>
     <p id="banner-desc">2015/3/28~29，淡江大學</p>
-    <div id="countdown"></div>
     <div id="banner-btn-wrap">
       <a href="{{ config.signup_link }}" class="big-btn">馬上報名</a>
     </div>

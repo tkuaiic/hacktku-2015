@@ -1,2 +1,77 @@
+@import "nib"
+@import "_variables"
+
+digit-height = 200px
+
+global-reset()
+
+html, body
+  height: 100%
+
+#countdown-container
+  font-family: font-title
+  position: relative
+  display: flex
+  height: 100%
+  align-items: center
+  justify-content: center
+  color: color-ocean
+
 #countdown
-  font-size: 100px
+  display: flex
+  font-size: digit-height
+  line-height: 1
+  font-weight: 200
+  text-align: center
+
+$header
+  position: absolute
+  left: 0
+  width: 100%
+  text-align: center
+  font-size: 40px
+  font-weight: bold
+
+#countdown-header
+  @extend $header
+  top: 1em
+
+#countdown-footer
+  @extend $header
+  bottom: 1em
+
+.countdown-digit
+  position: relative
+  width: digit-height * 0.5
+  height: digit-height
+  &:nth-child(3), &:nth-child(5)
+    margin-left: 50px
+    &:before
+      content: ":"
+      opacity: 0.5
+      position: absolute
+      width: 50px
+      left: @width * -1
+      animation: blink 1s step-start infinite
+
+.countdown-digit-item
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  transition: 0.5s
+  opacity: 0
+  transform: translateY(100%)
+  &.current
+    transform: translateY(0)
+    opacity: 1
+  &.prev
+    transform: translateY(-100%)
+    opacity: 0
+
+@keyframes blink
+  0%
+    opacity: 1
+  50%
+    opacity: 0
