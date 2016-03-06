@@ -1,0 +1,18 @@
+#intro-inner {
+  max-width: 600px;
+}
+.intro-theme-wrap {
+  text-align: center;
+}
+.intro-theme {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: 35px;
+  line-height: 78px;
+  margin: 15px 25px;
+  border: 1px dashed #e3e3e3;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #003381;
+}

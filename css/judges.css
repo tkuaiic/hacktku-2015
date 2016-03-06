@@ -1,0 +1,48 @@
+#judge-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.judge-item-wrap {
+  text-align: center;
+  width: 300px;
+}
+.judge-item {
+  padding: 30px;
+}
+.judge-photo {
+  display: block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.judge-name {
+  font-weight: bold;
+  display: block;
+  font-size: 1.2em;
+  margin-top: 1em;
+  line-height: 1;
+}
+.judge-title {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 10px;
+  line-height: 1;
+}

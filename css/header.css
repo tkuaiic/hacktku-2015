@@ -1,0 +1,78 @@
+#header {
+  background: rgba(255,255,255,0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#header:before,
+#header:after {
+  content: "";
+  display: table;
+}
+#header:after {
+  clear: both;
+}
+#header-nav {
+  float: right;
+  display: none;
+  position: relative;
+}
+@media screen and (min-width: 769px) {
+  #header-nav {
+    display: block;
+  }
+}
+.header-nav-item {
+  float: left;
+  line-height: 1;
+  padding: 0 15px;
+}
+.header-nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #444;
+  display: block;
+  padding: 20px 0;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.header-nav-link:hover,
+.header-nav-link.on {
+  color: #0051cd;
+}
+#header-signup-btn {
+  padding: 8px 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: #003381;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 20px;
+  display: block;
+  border: 2px solid #003381;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  float: right;
+  line-height: 1;
+}
+#header-signup-btn:hover {
+  background: #003381;
+  color: #fff;
+}
+#header-nav-indicator {
+  position: absolute;
+  background: #003381;
+  bottom: 8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}

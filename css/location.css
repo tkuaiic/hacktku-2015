@@ -1,0 +1,59 @@
+#location-inner {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 769px) {
+  #location-inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+#location-map {
+  height: 260px;
+}
+@media screen and (min-width: 769px) {
+  #location-map {
+    height: auto;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 769px) {
+  #location-address-wrap {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+#location-address {
+  padding: 20px;
+}
+#location-address-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #003381;
+  display: block;
+  line-height: 1;
+  padding-bottom: 0.3em;
+}
+#location-address-detail {
+  color: #999;
+  font-size: 0.9em;
+}
