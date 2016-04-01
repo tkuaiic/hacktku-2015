@@ -4,7 +4,7 @@
   var container = document.getElementById('countdown');
   var digitLen = 4;
   var digits = new Array(digitLen);
-  var target = new Date('2015-03-28T09:00:00+08:00').getTime();
+  var target = new Date('2016-04-02T09:00:00+08:00').getTime();
 
   var DURATION_SECOND = 1000;
   var DURATION_MINUTE = DURATION_SECOND * 60;
