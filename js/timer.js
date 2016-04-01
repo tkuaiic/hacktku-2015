@@ -2,7 +2,7 @@
   'use strict';
 
   var container = $('#countdown');
-  var target = new Date('2015-03-29T15:30:00+08:00').getTime();
+  var target = new Date('2016-04-03T15:00:00+08:00').getTime();
   var digitLen = 6;
   var digits = new Array(digitLen);
   var prevDigits = new Array(digitLen);
